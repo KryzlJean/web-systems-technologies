@@ -1,119 +1,25 @@
-/* dashboard css*/
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  body{
-    background:  whitesmoke;
-  }
-  
-  .wrapper{
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-   
-  .wrapper .sidebar{
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    background: #333;
-    padding: 30px 0;
-    
-  }
-  
-  .wrapper .sidebar h2{
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .wrapper .sidebar ul li{
-    padding: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(225,225,225,0.05);
-    
-  }
-  
-  .wrapper .sidebar ul li a{
-    color: white;
-    display: block;
-    text-decoration: none;
-  }
-  
-  .wrapper .sidebar ul li:hover{
-    background: gray;
-  }
-  
-  .wrapper .sidebar ul li:hover a{
-    color: #ccc;
-  }
-  
-  .wrapper .main_content{
-    width: 100%;
-    background: #ffffff;
-  }
-  
-  .wrapper .main_content .header{
-    padding: 20px;
-    padding-left: 13%;
-    background: #2189eb;
-    height: 110px;
-    max-width: 100%;
-  }
-  
-  .wrapper .main_content .info{
-    margin: 20px;
-    text-align: center;
-    padding-left: 13%;
-  }
-  
-  .header {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff; 
-    
-  }
-  
-  .logout {
-    background-color: red;
-    color: white;
-    padding: 14px 29px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 3px; 
-    margin-left: 100px;
-    width: 100px;
-    cursor: pointer;
-    display: flex;
-  }
-  
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-    height: 35px;
-    position: absolute;
-    bottom: 0;
-    padding-left: 13%;
-    line-height: 20px;
-  }
+<div class="flex h-screen">
+  <div class="fixed h-full w-48 bg-gray-900 p-6">
+    <h2 class="text-white text-center mb-6">Sidebar</h2>
+    <ul>
+      <li class="py-3 border-b border-gray-600">
+        <a href="#" class="text-white block">Link 1</a>
+      </li>
+      <li class="py-3 border-b border-gray-600">
+        <a href="#" class="text-white block">Link 2</a>
+      </li>
+      <!-- Add more sidebar links as needed -->
+    </ul>
+  </div>
+  <div class="flex-1 bg-white">
+    <div class="header bg-blue-500 py-5 text-white text-center text-3xl font-bold">Header</div>
+    <div class="info py-5 pl-12">
+      <!-- Content goes here -->
+      <p>Main Content</p>
+      <button class="logout bg-red-500 text-white px-8 py-3 rounded-md">Logout</button>
+    </div>
+    <div class="footer bg-gray-900 text-white text-center py-1 pl-12">
+      Footer
+    </div>
+  </div>
+</div>
